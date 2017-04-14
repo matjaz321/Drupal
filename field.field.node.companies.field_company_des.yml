@@ -1,0 +1,21 @@
+uuid: 37618b4a-de13-43c1-b2ec-d695d1c22866
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_des
+    - node.type.companies
+  module:
+    - text
+id: node.companies.field_company_des
+field_name: field_company_des
+entity_type: node
+bundle: companies
+label: 'Company Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
