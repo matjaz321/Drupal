@@ -1,0 +1,18 @@
+uuid: a6d74893-0197-4270-96bf-a7fb2b6a5dcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.companies
+id: node.companies.title
+field_name: title
+entity_type: node
+bundle: companies
+label: 'Title Node'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

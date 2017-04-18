@@ -1,0 +1,28 @@
+uuid: b900c4e6-3749-4af5-a2c7-8435b9adacf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+    - node
+  theme:
+    - bartik
+id: eventdays1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: event_days
+settings:
+  id: event_days
+  label: 'Event Days1'
+  provider: ad_general
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      events: events
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,6 @@
+ad_general.content:
+  path: '/ad_general'
+  defaults:
+    _title: 'Ad_general'
+  requirements:
+    _permission: 'access content'

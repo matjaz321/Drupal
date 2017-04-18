@@ -1,0 +1,9 @@
+name: Ad General
+description: Ad General
+package: Custom
+
+type: module
+core: 8.x
+
+dependency:
+  -entity

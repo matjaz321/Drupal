@@ -1,0 +1,14 @@
+<?php
+use Drupal\node\NodeInterface;
+use \Drupal\Core\Entity\ContentEntityInterface; 
+
+function ad_general_node_insert(NodeInterface $node1) {
+	$nid = $node1->id();
+	$node = node_load($nid);
+	//drupal_set_message($node->getType());
+	if($node->getType() == 'companies'){
+		if(!$node->get('field_company_web')->getString()){
+			drupal_set_message('Please consider adding a website for your company. It’s not mandatory, but it’s a good way of showing people what you do.');
+		}
+	}
+}

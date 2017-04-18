@@ -1,0 +1,23 @@
+uuid: be7822a5-1d84-4400-bd6f-4015a635e715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_website
+    - node.type.locations
+  module:
+    - link
+id: node.locations.field_location_website
+field_name: field_location_website
+entity_type: node
+bundle: locations
+label: 'Location Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

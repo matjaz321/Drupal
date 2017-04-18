@@ -1,0 +1,2 @@
+uporabnik: admin
+geslo: admin
