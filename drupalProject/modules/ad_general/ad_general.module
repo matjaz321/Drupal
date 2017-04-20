@@ -7,7 +7,7 @@ function ad_general_node_insert(NodeInterface $node1) {
 	$node = node_load($nid);
 	//drupal_set_message($node->getType());
 	if($node->getType() == 'companies'){
-		if(!$node->get('field_company_web')->getString()){
+		if(!$node->get('field_company_website')->getString()){
 			drupal_set_message('Please consider adding a website for your company. It’s not mandatory, but it’s a good way of showing people what you do.');
 		}
 	}

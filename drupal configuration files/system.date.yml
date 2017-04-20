@@ -2,7 +2,7 @@ country:
   default: SI
 first_day: 0
 timezone:
-  default: Europe/Ljubljana
+  default: Europe/Berlin
   user:
     configurable: true
     warn: false

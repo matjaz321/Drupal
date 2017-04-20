@@ -768,13 +768,13 @@ $databases['default']['default'] = array (
   'username' => 'root',
   'password' => '',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => php_sapi_name() == 'cli' ? '127.0.0.1' : 'localhost',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_j_F3dYv2ccvus3KGsE24U3faYrHN3hyOSVyLYcLv9LPDwVpf6wBV5KVCz-Itfo3oHb-rUxiLXw/sync';
+$config_directories['sync'] = 'sites/default/config/sync';
 
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
